@@ -5,9 +5,7 @@ const { parseArgs, toBool } = require('./utils/args');
 const params = parseArgs(process.argv.slice(2));
 
 const mode = params.mode || 'desktop-safari';
-const siteUrl =
-  params.url ||
-  'https://dev.autocomparah.com/ofertas/?idCotacao=ff202788-648c-453d-8f93-00fffb34d9e4';
+const siteUrl = params.url || 'https://hangell.org';
 
 const headless = toBool(params.headless, false);
 const devtools = toBool(params.devtools, true);
